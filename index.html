@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Wikipedia Viewer</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+  <div class="wrapper">
+
+    <section class="search">
+      <h1 class="search__title"><a href="index.html">Wikipedia</a></h1>
+      <input class="search__input" type="search" autofocus>
+      <div class="search__buttons">
+        <a class="btn btn__search">Search</a>
+        <a href="https://en.wikipedia.org/wiki/Special:Random" class="btn btn__random" target="_blank">Random</a>
+      </div>
+    </section>
+
+    <section class="results__list"></section>
+
+  </div>
+  
+  <footer class="copyright">
+    Made by <a href="https://github.com/BARADATbIU" target="_blank">Kharlamov</a>
+  </footer>
+
+  <template class="results__template">
+    <div class="result">
+      <a class="result__link" target="_blank"></a>
+      <p class="result__text"></p>
+    </div>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>
